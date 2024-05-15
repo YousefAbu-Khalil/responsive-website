@@ -7,30 +7,71 @@
     <style>
         .contener{
             display: grid;
-            grid-template-columns: auto auto auto;
-            border: 1px solid black;
-            gap: 5px;
+            grid-template-columns: repeat(3 , 1fr) ;
+            gap: 12px;
         }
         .text{
             display: flex;
-            text-align: center;
+            flex-direction: row;
+            gap: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2) ;
+            border: none;
+           
         }
+        .imag{
+            width: 200px ;
+            height: 100%;
+           
+
+
+        }
+
+        @media screen and (max-width: 700px){
+            .contener{
+            grid-template-columns:repeat( 1, 1fr)
+        }
+        .imge{
+            width: 100% ;
+            height: auto ;
+        }
+
+    }
+
     </style>
 </head>
 <body>
     <div class="contener">
-        <div class="d1">
-           <div class="imag"><img src="images.jfif"></div> 
-           <div class="text"><p>best</p></div>
+        <div class="text">
+           <div > <img  class="imag" src="images.jfif"></div> 
+           <div > <span> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+          </svg> <p style="display:inline-block "> Members Only</p></span> 
+            <h3>Best Mountain Trails 2020</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus iste et corporis beatae repudiandae saepe voluptate hic </p>
+        
+             <svg  style="height:30px ;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+             </svg> <p style="display:inline-block" > John Smith <br> Aug 18 </p>
+        
+            </div>
         </div>
-        <div class="d1">
-            <div class="imag"><img src="download.jfif"></div>
-            <div class="text"><p>rivers</p></div>
+        <div class="text">
+            
+            <div><img class="imag" src="download.jfif"></div>
+            <div >
+                <svg  style="float: left;"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                  </svg><p>rivers</p></div>
         </div>
-        <div class="d1">
-            <div class="imag"><img src="download (1).jfif"></div>
+        <div class="text">
+            <div ><img  class="imag" src="download (1).jfif"></div>
             <div class="text"><p>forests</p></div>
         </div>
     </div>
+
+   <script>
+    
+    </script>
 </body>
 </html>
