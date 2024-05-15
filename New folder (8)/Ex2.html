@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dc {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                'da ch ch wi ta fw'
+                'fo fo bu el ca er'
+            ;
+            gap: 10px;
+        }
+
+        .d1 {
+            grid-area: da;
+            background-color: blue;
+        }
+
+        .d2 {
+            grid-area: ch;
+            background-color: rgb(76, 76, 104);
+        }
+
+        .d3 {
+            grid-area: wi;
+            background-color: green;
+        }
+
+        .d4 {
+            grid-area: ta;
+            background-color: rgb(105, 116, 11);
+        }
+
+        .d5 {
+            grid-area: fw;
+            background-color: rgb(173, 156, 218);
+        }
+
+        .d6 {
+            grid-area: fo;
+            background-color: rgba(24, 179, 218, 0);
+        }
+
+        .d7 {
+            grid-area: bu;
+            background-color: rgb(148, 189, 36);
+        }
+
+        .d8 {
+            grid-area: el;
+            background-color: rgb(175, 36, 140);
+        }
+
+        .d9 {
+            grid-area: ca;
+            background-color: blue;
+        }
+
+        .d10 {
+            grid-area: er;
+            background-color: blue;
+        }
+
+        .dc2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                'tu nu'
+                'ts to'
+                'po oo'
+            ;
+            width: 50%;
+            height: 10%;
+            gap: 10px;
+        }
+
+        .d11 {
+            grid-area: tu;
+            background-color: white;
+        }
+
+        .d12 {
+            grid-area: nw;
+            background-color: white;
+        }
+
+        .d13 {
+            grid-area: ts;
+            background-color: white;
+        }
+
+        .d14 {
+            grid-area: to;
+            background-color: white;
+        }
+
+        .d15 {
+            grid-area: po;
+            background-color: white;
+        }
+
+        .d16 {
+            grid-area: oo;
+            background-color: white;
+        }
+        .cc{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .img{
+            display: flex;
+            justify-content: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cc">
+    <div class="dc">
+        <div class="d1">dashboard</div>
+        <div class="d2">chart</div>
+        <div class="d3">widgets</div>
+        <div class="d4">tables</div>
+        <div class="d5">full width</div>
+        <div class="d6">forms</div>
+        <div class="d7">buttons</div>
+        <div class="d8">elements</div>
+        <div class="d9">calnedar</div>
+        <div class="d10">errors</div>
+    </div>
+    <div style="display: flex; justify-content: left;">
+        <div class="img">
+            <img src="analysis.png">
+        </div>
+        <div class="dc2">
+            <div class="d11">total users</div>
+            <div class="d12">new users</div>
+            <div class="d13">total shop</div>
+            <div class="d14">total orders</div>
+            <div class="d15">pendding orders</div>
+            <div class="d16">online orders</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
